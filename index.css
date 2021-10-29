@@ -10,7 +10,7 @@ section{
     background-image: linear-gradient(rgba(0,0,0,0.3),transparent) ,url(/images/background2.jpg) ;
     background-size: cover;
     background-position: center;
-    padding: 0 0;
+    padding: 0 8%;
     position: relative;
     
 }
@@ -21,10 +21,7 @@ section{
 /* .navbar navbar-expand-lg navbar-light bg-light{
     height: 120px;
 } */
-.dropdown-item{
-    padding: 30px;
-    align-items: center;
-}
+
 .text-box{
     color:rgb(38, 185, 204);
     position: absolute;
