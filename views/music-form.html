@@ -1,0 +1,87 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musician</title>
+    <link rel="stylesheet" href="music-form.css">
+    <style>
+        body{
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            width: 60%;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid rgb(186, 53, 53);
+        }
+        label{
+            padding-left: 5%;
+            
+        }
+        input{
+            
+            margin: 5px;
+            border-radius: 6px;
+          
+            width: 120px;
+        
+        }
+        select{
+            margin: 5px;
+            border-radius: 6px;
+        }
+        button{
+            margin: 5px;
+            border-radius: 6px;
+            color: rgb(19, 16, 194);
+            background-color: lightgreen;
+        }
+    </style>
+    <script src="/public/js/form.js"></script>
+    <script type="text/javascript"> 
+    function validate(){
+    var username = document.getElementsByClassName('real_name');
+    if(username.value==''){
+        alert("Please enter Real Name")
+
+    }
+    else{
+       
+    }
+}
+    </script>
+</head>
+<body>
+    <form  class="Musician_form"  onsubmit="return(validate())" action="" >
+        <h2>Musicians's Form</h2>
+        <label for="realname">Real name:</label><br>
+        <input class="real_name" type="text" placeholder="real-name" ><br>
+        <label for="stagename">Stage name:</label><br>
+        <input class="stagename" type="text" placeholder="stagename"></br>
+        <label for="DOB">Date of birth:</label><br>
+        <input class="DOB" type="date" placeholder="Date Of Birth"></br>
+        <label for="gender">Gender:</label><br>
+        <select  name="Gender" id="" >Gender
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+    
+        </select><br>
+        <label for="Location">Base:</label><br>
+        <input class="location" type="text" placeholder="City"><br>
+        <label for="Location">Location:</label><br>
+        <input class="location" type="text" placeholder="Address"><br>
+
+        <label for="Albums">Number of Albums</label><br>
+        <input class="Albums" type="text"  placeholder="Number of Albums"><br>
+        <label for="Id">Artist ID</label><br>
+        <input class="ID" type="text"><br>
+        <label for="Date">Date You Start Singing:</label><br>
+        <input class="DOB" type="date" placeholder="Date you Start singing"><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script src="/public/js/form.js"></script>
+</body>
+</html>
